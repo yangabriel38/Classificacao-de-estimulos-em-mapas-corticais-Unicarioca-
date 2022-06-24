@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 #--------------------------Parte 1------------------------------------
 
@@ -331,10 +326,6 @@ def classificar(som, data, area):
         return
     else:
         print ("Não foi possível localizar o destino desse estímulo.")
-        
-
-
-# In[4]:
 
 
 #--------------------------Parte 14------------------------------------
@@ -345,9 +336,6 @@ def classificar(som, data, area):
 area = area_cort(som2, data)
 
 
-# In[5]:
-
-
 #--------------------------Parte 15------------------------------------
 import random #É necessário o random para escolher
                     #aleatoriamente dentro da função.
@@ -355,8 +343,7 @@ import random #É necessário o random para escolher
 classificar(som2, data, area)
 
 
-# In[7]:
-
+#--------------------------Testes------------------------------------
 
 #Função feita para a realização do teste 3.
 def teste3(som, data, area): 
@@ -369,10 +356,6 @@ def teste3(som, data, area):
     print("Ruído encontrado!")       
     return 0
 
-
-# In[8]:
-
-
 #Execução do teste 3.
 for x in range(100000):
     estado = teste3(som2, data, area)
@@ -380,10 +363,6 @@ for x in range(100000):
         break
 if estado == 1:
     print("Não foi encontrado ruído!")
-
-
-# In[9]:
-
 
 #Execução do teste 4.
 data_teste= np.genfromtxt('teste4.csv', delimiter= ';',
