@@ -115,9 +115,6 @@ with open('som.p', 'rb') as infile:
 print ("Rede pronta para o uso!!")
 
 
-# In[2]:
-
-
 #--------------------------Parte 12------------------------------------
 
 #Essa função foi feita para salvar as coordenadas
@@ -132,9 +129,6 @@ def area_cort(som, data):
         area.insert(i,som2.winner((data[i])))
             
     return area
-
-
-# In[3]:
 
 
 #--------------------------Parte 13------------------------------------
